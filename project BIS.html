@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Stay Advisor </title>
+<link rel="stylesheet"  href="styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+<header> 
+<a href="#" class="logo"> STAY ADVISOR</a>
+<nav class="navbar">
+<a href="#home">home</a>
+<a href="#about us">about us</a>
+<a href="#contact">contact</a>
+</nav>
+</header><br><br> <br> <br>
+<button class="open-button" onclick="openForm()">Sign In</button>
+<div class="form-popup" id="myForm">
+  <form action="index.php" method="post" class="form-container">
+    <h1>Login</h1>
+
+    <label ><b>User Name:</b></label>
+    <input type="text" placeholder="Enter your name" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter email" name="email" required>
+
+    
+    <button type="submit" name="btnlogin" value="Login" class="btn">Login</button>
+    <button type="button"  class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="signup.php" method="post">
+    <div class="containers">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      
+      <label for="em"><b>Email</b></label>
+      <input type="email" id="em" placeholder="Enter Email" name="email" required>
+        <br>
+      <label for="pw"><b>Password</b></label>
+      <input type="password" id="pw" placeholder="Enter Password" name="psw" required>
+        <br>
+      <label for="pw-repeat"><b>Repeat Password</b></label>
+      <input type="password" id="pw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+       <br>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<h2 id="home">Savoy Sharm El Sheikh</h2>
+<div class="rating ">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+    <h4>9000 reviews</h4>
+</div>
+<section class="section">
+    <div class="slider">
+        <div class="slide">
+            <input id="r1" type="radio" name="radio">
+            <input id="r2" type="radio" name="radio">
+            <input id="r3" type="radio" name="radio">
+            <input id="r4" type="radio" name="radio">
+            <div class="st first">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/1a/90/b1/savoy-sharm-el-sheikh.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="st">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/20/b4/7a/savoy-sharm-el-sheikh.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="st">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/20/b3/9a/savoy-sharm-el-sheikh.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="st">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/20/b4/74/savoy-sharm-el-sheikh.jpg?w=1200&h=-1&s=1">
+            </div>
+        </div>
+        <div class="navm">
+            <label for="r1" class="m-btn"></label>
+            <label for="r2" class="m-btn"></label>
+            <label for="r3" class="m-btn"></label>
+            <label for="r4" class="m-btn"></label>
+        </div>
+    </div>
+</section>
+<h3><b>about</b></h3>
+<p >
+    Savoy Sharm El Sheikh is located near Ras Mohammed National Park inside SOHO SQUARE, the 5-star hotel offers 136 sea view rooms,<br> 55 pool view rooms, 161 garden
+     view rooms, 46 triple rooms, 2 special care rooms, 13 diplomatic suites, and 1 presidential suite.The hotel <br>also features a private beach, 5 swimming pools 3 adult
+      pools (2 heated in winter time) and 2 children's pools (1 heated in winter time) , <br>5 Bars (1 pool Bar) , and 6 restaurants Savoy hotel offers different types of meal 
+      plans that ensures you trying everything starting from <br>the hotel’s main restaurant to Soho Square different restaurants and cuisines; standard Bed and breakfast, half 
+      board, full board, <br>S-Class (ultra all-inclusive concept) , and half and full board dine around option (which SOHO Square restaurants as well) Diving or<br> at least 
+      snorkeling with a PADI approved dive school on the beach.In the hotel we can find tennis, squash and beach volleyball courts <br>as well as a modern gym facility . 
+      Sauna and Jacuzzis, as well as a range of beauty and spa treatments. Each room features adjustable<br> air conditioning, WiFi access, mini-bar,en suite bathroom and 
+      hairdryer,and a private terrace overlooking our gardens , pools, or the beach.</p>
+<br>
+<div class="wrapper">
+<h3> Property amenities </h3>
+<ul class="list">
+    <li>Paid private parking on-site</li>
+    <li>Free internet</li>
+    <li>Free braekfast</li>
+    <li>Diving</li>
+    <li>Beach</li>
+    <li>Sauna</li>
+    
+</ul>
+<h3> Room features </h3>
+<ul class="list">
+    <li>Allergy-free room</li>
+    <li>Air conditioning</li>
+    <li>Walk-in shower</li>
+    <li>Blackout curtains</li>
+    <li>Cable/satellite TV</li>
+    <li>Room service</li>
+    
+</ul>
+</div>
+<ul>
+    <li>Location</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <h4>5</h4>
+    </div>
+    <li>Cleanliness</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>4</h4>
+    </div>
+    <li>Service</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>4.1</h4>
+    </div>
+    <li>Value</li>
+    <div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>3</h4>
+    </div>
+</ul>
+<h3>For more details</h3>
+<a href="https://www.savoygroup-sharm.com/" target="_blank">Visit hotel website</a>
+<h3> Reviews </h3>
+<section id="rev">
+    <div class="review-box-container">
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nkrIVx2SNAV6ivgGymN-fq1ivz95n5vnDQ&usqp=CAU">
+    </div>
+    <div class="name-user">
+        <strong>Steven</strong>
+        <span>@stevenm</span>
+    </div>
+    </div>
+    <div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    </div>
+    <div class="comments">
+        <p>First time at Savoy sharm el sheikh and it will not be the last visit .staff helpful and eager to help . An elegant beachfront location, stylish as usual at sharm el sheikh High quality furniture with amazing lighting, textures and fixtures with a generous design Amazing pools,beautiful hotel that why we visited it</p>
+        </div>
+    </div>
+    <!--box2-->
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsj52ED_3qGSmtvqPwhvV5qtAx4hbFRAKJ5A&usqp=CAU">
+    </div>
+    <div class="name-user">
+        <strong>Catarina</strong>
+        <span>@Catarinatm</span>
+    </div>
+    </div>
+    <div class="reviews">
+        
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        
+    </div>
+    </div>
+    <div class="comments">
+        <p>The hotel is gregarious and the facilities are great .the location in the center of sharm el sheikh nearto soho Square. I loved every thing in savoy sharm its my favourite place .staff are great special thanks to HESHAM from the main restaurant who went for the extra mile to help us</p>
+        </div>
+    </div>
+    <!--box3-->
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZXxlbnwwfHwwfHx8MA%3D%3D">
+    </div>
+    <div class="name-user">
+        <strong>Fran</strong>
+        <span>@fran k</span>
+    </div>
+    </div>
+    <div class="reviews">
+        
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        
+    </div>
+    </div>
+    <div class="comments">
+        <p>Everything was super good. The hotel .the facilities. The staff is well trained, well oriented people.I love savoy because they care about who serving the guest.</p>
+        </div>
+    </div>
+    <!--box4-->
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXBfhC-QlgM4DmR6VXrznFyXdNwytV9-SOMw&usqp=CAU">
+    </div>
+    <div class="name-user">
+        <strong>Johnan</strong>
+        <span>@Johnandcarole</span>
+    </div>
+    </div>
+    <div class="reviews">
+        
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        
+    </div>
+    </div>
+    <div class="comments">
+        <p>Perfect hotel. Rooms great. Food great. Yasser houskeeping excellent.
+            No problems at all. Great service from all the staff. Pools are great and the beach is superb. Snorkeling is amazing endless fish. Had a snorkeling trip and saw a pod of over 40 dolphins. Mind blowing!</p>
+        </div>
+    </div>
+    </div>
+    <p id="data"></p>
+    </section>
+    <div class="contain">
+        
+
+    <h3> How was your experience</h3>
+    <div class="container">
+        <div class="star">
+           <input id="rate-5" type="radio" name="rate">
+           <label for="rate-5" class="fas fa-star"></label>
+           <input id="rate-4" type="radio" name="rate">
+           <label for="rate-4" class="fas fa-star"></label>
+           <input id="rate-3" type="radio" name="rate">
+           <label for="rate-3" class="fas fa-star"></label>
+           <input id="rate-2" type="radio" name="rate">
+           <label for="rate-2" class="fas fa-star"></label>
+           <input id="rate-1" type="radio" name="rate">
+           <label for="rate-1" class="fas fa-star"></label>
+        </div>
+    </div>
+    <h3> write your review</h3>
+    <form class="myForm">
+        Full name: <input id="userName" type="text" name="fname">
+        <br><br>
+        Email : <input id="userEmail" type="email" name="email">
+        <br><br>
+        <textarea id ="userComment" rows="4" cols="50" name="comment" placeholder="your review...."> </textarea>
+        <br><br>
+        
+        <input id="btn1" type="button" onclick="myFunction()" value="Submit">
+     </form>
+     
+     <p id="data"></p>
+     <script>
+        function myFunction(){
+         let data = "";  let name = document.getElementById("userName").value
+         let email = document.getElementById("userEmail").value
+         let comment = document.getElementById("userComment").value
+        
+        data = "User name : "+name+"<br/>User email : "+email+ "<br/> "+comment
+        
+        document.getElementById("data").innerHTML = data  
+        }
+     </script>
+    
+</div>
+    <br>
+    <hr>
+    <h2 id="home">Rixos Sharm El Sheikh</h2>
+<div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>7600 reviews</h4>
+</div>
+<section class="sections">
+    <div class="sliders">
+        <div class="slidee">
+            <input id="r5" type="radio" name="radio">
+            <input id="r6" type="radio" name="radio">
+            <input id="r7" type="radio" name="radio">
+            <input id="r8" type="radio" name="radio">
+            <div class="sl second">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/b8/2e/1d/exterior-view.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="sl">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/03/75/1b/rixos-sharm-el-sheikh.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="sl">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/03/63/43/rixos-sharm-el-sheikh.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="sl">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/bf/70/63/main-pool.jpg?w=1200&h=-1&s=1">
+            </div>
+        </div>
+        <div class="navs">
+            <label for="r5" class="s-btn"></label>
+            <label for="r6" class="s-btn"></label>
+            <label for="r7" class="s-btn"></label>
+            <label for="r8" class="s-btn"></label>
+        </div>
+    </div>
+</section>
+<h3><b>about</b></h3>
+<p>
+    198 Superior Rooms, 290 Deluxe Rooms, 70 Family Rooms and 137 Junior Suites are spread around this beautifully <br>designed modern resort. Several swimming pools wind there way between buildings or
+     there is a gorgeous stretch of <br>beach providing our guests with lots of options on where to spend their days. Try snorkeling from the wooden jetty <br>or merely a stroll at sunset to see the
+      magnificence of the underworld of the Red Sea. Dining choices include <br>international buffet or choose from the World of Cuisines, with Turkish, Chinese, Indian, Sushi, Italian, Sea Food or 
+      <br>a taste of Brazilian cuisine.
+
+</p>
+<br>
+<div class="wrapper">
+<h3> Property amenities </h3>
+<ul class="list">
+    <li>Free parking</li>
+    <li>Free internet</li>
+    <li>Fitness Center with Gym / Workout Room</li>
+    <li>Bar / lounge</li>
+    <li>Pool</li>
+    <li>Restaurant</li>
+    
+</ul>
+<h3> Room features </h3>
+<ul class="list">
+    <li>Allergy-free room</li>
+    <li>Room service</li>
+    <li>Separate dining area</li>
+    <li>Air conditioning</li>
+    <li>Cable / satellite TV</li>
+    <li>Private bathroom</li>
+    
+</ul>
+</div>
+<ul>
+    <li>Location</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>4.3</h4>
+    </div>
+    <li>Cleanliness</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>4</h4>
+    </div>
+    <li>Service</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>3.8</h4>
+    </div>
+    <li>Value</li>
+    <div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>3.2</h4>
+    </div>
+</ul>
+<h3>For more details</h3>
+<a href="https://www.rixos.com/" target="_blank">Visit hotel website</a>
+<h3> Reviews </h3>
+<section id="rev">
+<div class="review-box-container">
+<div class="review-box">
+    <div class="box-top">
+<div class="profile">
+<div class="profile-img">
+    <img src="https://images.ctfassets.net/az3stxsro5h5/24L2UM6hV3m4csMvBzkHbj/9d4583541bdb29ae0c6a9ff2b60f1313/After.jpeg?w=2389&h=2986&fl=progressive&q=50&fm=jpg">
+</div>
+<div class="name-user">
+    <strong> Maya</strong>
+    <span>@mayaijazwed</span>
+</div>
+</div>
+<div class="reviews">
+    
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    
+</div>
+</div>
+<div class="comments">
+    <p>This was the best hotel, we have ever been. Everyone in the hotel was able to help you at every step and do everything so that you start and end a day with a great mood. I have never met so many wonderful people in one place. Food - the highest quality.</p>
+    </div>
+</div>
+<!--box2-->
+<div class="review-box">
+    <div class="box-top">
+<div class="profile">
+<div class="profile-img">
+    <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG98ZW58MHx8MHx8fDA%3D">
+</div>
+<div class="name-user">
+    <strong> Ahmed</strong>
+    <span>@ahmedmn</span>
+</div>
+</div>
+<div class="reviews">
+   
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+    
+</div>
+</div>
+<div class="comments">
+    <p>this was my third visit to Rixos and my fiancés first. Everything about the hotel is fantastic, the food, the alcohol, the cleanliness but nothing even compares to the service you receive from the staff</p>
+    </div>
+</div>
+<!--box3-->
+<div class="review-box">
+    <div class="box-top">
+<div class="profile">
+<div class="profile-img">
+    <img src="https://earthsky.org/upl/2023/06/Sunset-Shells-Christy-Mandeville-Feb-9-2023.jpg">
+</div>
+<div class="name-user">
+    <strong> Gill</strong>
+    <span>@gill R</span>
+</div>
+</div>
+<div class="reviews">
+    
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    
+</div>
+</div>
+<div class="comments">
+    <p>A week was just not long enough! We loved every moment at this place! The food was exceptional,the staff genuinely cared about giving you the best service! Our room was upgraded to a junior suite - it was huge!! The Palm restaurant had such amazing choice and never disappointed</p>
+    </div>
+</div>
+<!--box4-->
+<div class="review-box">
+    <div class="box-top">
+<div class="profile">
+<div class="profile-img">
+    <img src="https://www.befunky.com/images/prismic/5ddfea42-7377-4bef-9ac4-f3bd407d52ab_landing-photo-to-cartoon-img5.jpeg?auto=avif,webp&format=jpg&width=863">
+</div>
+<div class="name-user">
+    <strong> Mina</strong>
+    <span>@minajazwed</span>
+</div>
+</div>
+<div class="reviews">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+    
+</div>
+</div>
+<div class="comments">
+    <p>We enjoyed the stay very much, good food especially the 6 special restaurants. Very good professional evening shows en DJ who is very good as well. The goam party we liked even as the Beachbar to have a drink before shower and enjoyed the shows</p>
+    </div>
+</div>
+</div>
+<p id="data1"></p>
+</section>
+<h3> How was your experience</h3>
+    <div class="container">
+        <div class="star">
+           <input id="rate-5" type="radio" name="rate">
+           <label for="rate-5" class="fas fa-star"></label>
+           <input id="rate-4" type="radio" name="rate">
+           <label for="rate-4" class="fas fa-star"></label>
+           <input id="rate-3" type="radio" name="rate">
+           <label for="rate-3" class="fas fa-star"></label>
+           <input id="rate-2" type="radio" name="rate">
+           <label for="rate-2" class="fas fa-star"></label>
+           <input id="rate-1" type="radio" name="rate">
+           <label for="rate-1" class="fas fa-star"></label>
+        </div>
+    </div>
+    <h3> write your review</h3>
+    <form class="myForm">
+        Full name: <input id="userName1" type="text" name="fname">
+        <br><br>
+        Email : <input id="userEmail1" type="email" name="email">
+        <br><br>
+        <textarea id ="userComment1" rows="4" cols="50" name="comment" placeholder="your review...."> </textarea>
+        <br><br>
+        
+        <input id="btn2" type="button" onclick="myFunction1()" value="Submit">
+     </form>
+     
+     
+     <script>
+        function myFunction1(){
+         let data = "";  let name = document.getElementById("userName1").value
+         let email = document.getElementById("userEmail1").value
+         let comment = document.getElementById("userComment1").value
+        
+        data = "User name : "+name+"<br/>User email : "+email+ "<br/> "+comment
+        
+        document.getElementById("data1").innerHTML = data  
+        }
+     </script>
+<br>
+<hr>
+<h2 id="home">SUNRISE Arabian Beach Resort</h2>
+<div class="rating ">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="far fa-star"></i>
+    <h4>7000 reviews</h4>
+</div>
+<section class="sectionss">
+    <div class="sliderss">
+        <div class="slidees">
+            <input id="r9" type="radio" name="radio">
+            <input id="r10" type="radio" name="radio">
+            <input id="r11" type="radio" name="radio">
+            <input id="r12" type="radio" name="radio">
+            <div class="sn third">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/ca/36/83/sunrise-grand-select.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="sn">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/58/b5/c9/sunrise-arabian-beach.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="sn">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/58/cb/ce/sunrise-arabian-beach.jpg?w=1200&h=-1&s=1">
+            </div>
+            <div class="sn">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/58/9c/34/sunrise-arabian-beach.jpg?w=1200&h=-1&s=1">
+            </div>
+        </div>
+        <div class="navk">
+            <label for="r9" class="k-btn"></label>
+            <label for="r10" class="k-btn"></label>
+            <label for="r11" class="k-btn"></label>
+            <label for="r12" class="k-btn"></label>
+        </div>
+    </div>
+</section>
+<h3><b>about</b></h3>
+<p >
+    Luxury resort with private beach and coral reef • 6 pools and 2 Jacuzzis • 2 buffet and 7 high à la carte restaurants (unlimited visits when booking all-inclusive) •<br> 
+    Royal club privileges upon booking selected suites • Royal Villa availability Discover the spirit of Arabian ambiance in the 5-star luxury SUNRISE Arabian Beach Resort <br>
+    -Grand Select-. Walk through entrances and hallways elegantly designed to provide an authentic Arabian feel. Gaze upon the beauty of the exterior, complementing the natural<br>
+     beauty of the Red Sea. Relax at one of the rooms on this six-terraced architectural beauty and enjoy all the luxuries we have to offer, including pools and a rooftop garden.<br>
+     We offer a private beach with access to a jetty giving you direct access to the beautiful clear waters in which you can discover the wonders of the Red Sea from our coral reef.<br> 
+     This elegant resort features a fully equipped gym (16+), and a luxury spa & beauty salon (chargeable). Free Wi-Fi is available throughout the resort and in all rooms. Relax at<br>
+     one of the 421 rooms & suites at the stunning resort. Every room comes with satellite TV, air conditioning, minibar with soft drinks, tea & coffee making facilities and much more. 
+    </p>
+<br>
+<div class="wrapper">
+<h3> Property amenities </h3>
+<ul class="list">
+    <li>Fitness Center with Gym / Workout Room</li>
+    <li>Free internet</li>
+    <li>Babysitting</li>
+    <li>Diving</li>
+    <li>Beach</li>
+    <li>Yoga classes</li>
+    
+</ul>
+<h3> Room features </h3>
+<ul class="list">
+    <li>Bathrobes</li>
+    <li>Air conditioning</li>
+    <li>Coffee / tea maker</li>
+    <li>Blackout curtains</li>
+    <li>Cable/satellite TV</li>
+    <li>Housekeeping</li>
+    
+</ul>
+</div>
+<ul>
+    <li>Location</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <h4>5</h4>
+    </div>
+    <li>Cleanliness</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>3.8</h4>
+    </div>
+    <li>Service</li><div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>4.3</h4>
+    </div>
+    <li>Value</li>
+    <div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <h4>3.2</h4>
+    </div>
+</ul>
+<h3>For more details</h3>
+<a href="https://www.sunrise-resorts.com/" target="_blank">Visit hotel website</a>
+<h3> Reviews </h3>
+<section id="rev">
+    <div class="review-box-container">
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgxWJ2PCjRg0LMXUhgkMyNctTITPmEXu9Y3GODx1sl&s">
+    </div>
+    <div class="name-user">
+        <strong>Hanna</strong>
+        <span>@hannast</span>
+    </div>
+    </div>
+    <div class="reviews">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    </div>
+    <div class="comments">
+        <p>I absolutely loved my holiday at Sunrise Arabian! We are very pleased with the choice of stay for our vacation. The location of the resort is great so we were always met with mesmerising views of the beach and the seaside.</p>
+        </div>
+    </div>
+    <!--box2-->
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://i.pinimg.com/170x/98/8f/54/988f54861df86df542121cb9b85f42a2.jpg">
+    </div>
+    <div class="name-user">
+        <strong>Victoria</strong>
+        <span>@Victoriast</span>
+    </div>
+    </div>
+    <div class="reviews">
+        
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        
+    </div>
+    </div>
+    <div class="comments">
+        <p>The hotel is immaculate and very beautiful. It’s very clean and very well maintained. The food is excellent. Even the buffet which is catered on mass has a very personal feel and is of exceptional quality, taste and variety. All international cuisines are catered for and again, the standard is exceptional. The Egyptian bread is a must. The service is phenomenal. Ahmed looked after us by the pool and he was the perfect attentive host. We will be coming back again.</p>
+        </div>
+    </div>
+    <!--box3-->
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://i.pinimg.com/originals/c3/6c/ee/c36cee9beb84cedee76e9c87220e2731.jpg">
+    </div>
+    <div class="name-user">
+        <strong>Lily</strong>
+        <span>@lilym</span>
+    </div>
+    </div>
+    <div class="reviews">
+        
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        
+    </div>
+    </div>
+    <div class="comments">
+        <p>Really friendly service and a beautiful hotel. The inclusive package is great and they are generous allowing you to stay and use all the facilities even after check out until you get your flight. I particularly loved the beach and the fact you can do your PADI at the resort's private beach</p>
+        </div>
+    </div>
+    <!--box4-->
+    <div class="review-box">
+        <div class="box-top">
+    <div class="profile">
+    <div class="profile-img">
+        <img src="https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg">
+    </div>
+    <div class="name-user">
+        <strong>Ammar</strong>
+        <span>@ammarad</span>
+    </div>
+    </div>
+    <div class="reviews">
+        
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        
+    </div>
+    </div>
+    <div class="comments">
+        <p>We had a great holiday with friends. The hotel staff was very polite and helpful. The rooms were cleaned every day, bedding and towels were perfectly clean. The food was delicious. The animation team kept the mood very high. Thanks to Liza, Donga, Laura, Toca, Ariana, dj Adam. It was very exciting. We really liked everything from food to cleanliness and service. We also really liked the shows, the games.
+            We were very pleased and if possible we will definitely return to this hotel.</p>
+        </div>
+    </div>
+    </div>
+       <p id="data2"></p>
+    </section>
+    <h3> How was your experience</h3>
+    <div class="container">
+        <div class="star">
+           <input id="rate-5" type="radio" name="rate">
+           <label for="rate-5" class="fas fa-star"></label>
+           <input id="rate-4" type="radio" name="rate">
+           <label for="rate-4" class="fas fa-star"></label>
+           <input id="rate-3" type="radio" name="rate">
+           <label for="rate-3" class="fas fa-star"></label>
+           <input id="rate-2" type="radio" name="rate">
+           <label for="rate-2" class="fas fa-star"></label>
+           <input id="rate-1" type="radio" name="rate">
+           <label for="rate-1" class="fas fa-star"></label>
+        </div>
+    </div>
+    <h3> write your review</h3>
+    <form class="myForm">
+        Full name: <input id="userName2" type="text" name="fname">
+        <br><br>
+        Email : <input id="userEmail2" type="email" name="email">
+        <br><br>
+        <textarea id ="userComment2" rows="4" cols="50" name="comment" placeholder="your review...."> </textarea>
+        <br><br>
+        
+        <input id="btn3" type="button" onclick="myFunction2()" value="Submit">
+     </form>
+     
+     
+     <script>
+        function myFunction2(){
+         let data = "";  let name = document.getElementById("userName2").value
+         let email = document.getElementById("userEmail2").value
+         let comment = document.getElementById("userComment2").value
+        
+        data = "User name : "+name+"<br/>User email : "+email+ "<br/> "+comment
+        
+        document.getElementById("data2").innerHTML = data  
+        }
+     </script>
+    <br>
+    <hr>
+<h2 id="about us"> About us</h2>
+<p> Welcome to Stay Advisor!
+
+    We're a team of travel lovers on a mission to make finding hotels easy and fun.<br> Our website lets you research properties using real reviews from other guests.<br>
+    Read what others say about cleanliness, comfort and more. See photos to get a feel for each <br>place. You can also sort by price, location and amenities.
+    With millions of reviews on hotels worldwide,<br> we give you all the info you need in one spot. Our simple design means no stress<br> when searching.
+    We created Stay Advisor because choosing accommodation can be tough. We want to take the <br>guesswork out so your focus is on making happy travel memories.
+    Whether planning a vacation or business trip,<br> we're here to help find the perfect hotel for you. Explore our site and let us know if you have any other questions!    </p>
+    <br>
+    <hr>
+    <h2 id="contact"> Contact</h2>
+    <p><b> General company phone number: +1 781 800 5000   </b> </p>
+    
+    
+</body>
+
+</html>
